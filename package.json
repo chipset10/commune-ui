@@ -1,0 +1,61 @@
+{
+  "name": "commune-ui",
+  "version": "1.0.0",
+  "description": "Commune UI Monorepo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chipset10/commune-ui.git"
+  },
+  "keywords": [
+    "communeai",
+    "ui",
+    "react",
+    "widget",
+    "typescript",
+    "bridge"
+  ],
+  "author": "chipset10",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/chipset10/commune-ui/issues"
+  },
+  "homepage": "https://github.com/chipset10/commune-ui#readme",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "engines": {
+    "node": ">=18.10.0"
+  },
+  "devDependencies": {
+    "@chainsafe/eslint-config": "^2.1.1",
+    "eslint": "^8.48.0",
+    "eslint-plugin-lit": "^1.9.1",
+    "typescript": "^5.2.2"
+  },
+  "packageManager": "yarn@4.0.1",
+  "scripts": {
+    "demo": "yarn workspace @buildwithsygma/sygmaprotocol-widget run dev",
+    "clean": "yarn workspaces foreach --all -pt run clean",
+    "build": "yarn workspaces foreach --all -pt run build",
+    "lint": "yarn workspaces foreach --all -pt run lint",
+    "test:unit": "yarn workspaces foreach --all -pt run test:unit",
+    "build:widget": "yarn workspace @buildwithsygma/sygmaprotocol-widget build:preview",
+    "build:react-widget": "yarn workspace @buildwithsygma/sygmaprotocol-react-widget build",
+    "build:react-widget-app": "yarn workspace @buildwithsygma/react-widget-app build",
+    "lint:widget": "yarn workspace @buildwithsygma/sygmaprotocol-widget lint",
+    "lint:react-widget": "yarn workspace @buildwithsygma/sygmaprotocol-react-widget lint"
+  },
+  "resolutions": {
+    "@polkadot/api": "10.7.2",
+    "@polkadot/util": "12.5.1",
+    "@polkadot/util-crypto": "12.5.1",
+    "@polkadot/wasm-bridge": "7.2.2",
+    "@polkadot/keyring": "12.5.1",
+    "@polkadot/wasm-crypto": "7.2.2"
+  }
+}

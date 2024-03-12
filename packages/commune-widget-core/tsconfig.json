@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "build",
+    "declaration": true,
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "rules": {
+          "no-incompatible-type-binding": "warning"
+        }
+      }
+    ]
+  },
+  "include": ["./src", "./tests"]
+}
