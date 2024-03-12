@@ -20,10 +20,10 @@ export const styles = css`
   }
 
   @font-face {
-    font-family: 'Inter';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 500;
-    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@200..900');
+    src: url('https://fonts.googleapis.com/css2?family=Arial:wght@200..900');
   }
 
   .widgetContainer {

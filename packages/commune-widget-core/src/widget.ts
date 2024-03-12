@@ -96,7 +96,7 @@ class CommuneWidget extends BaseComponent implements ICommuneWidget
               class="widgetContainer ${this.isLoading ? 'noPointerEvents' : ''}"
             >
               <section class="widgetHeader">
-                <div class="brandLogoContainer title">[Brand] Transfer</div>
+                <div class="brandLogoContainer title">COMAI Transfer</div>
                 ${this.renderConnect()}
               </section>
               <section class="widgetContent">
