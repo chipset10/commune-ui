@@ -4,7 +4,16 @@
   "description": "Commune UI Monorepo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "demo": "yarn workspace commune-widget-core run dev",
+    "clean": "yarn workspaces foreach --all -pt run clean",
+    "build": "yarn workspaces foreach --all -pt run build",
+    "lint": "yarn workspaces foreach --all -pt run lint",
+    "test:unit": "yarn workspaces foreach --all -pt run test:unit",
+    "build:widget": "yarn workspace commune-widget-core build:preview",
+    "build:react-widget": "yarn workspace commune-widget-provider build",
+    "build:react-widget-app": "yarn workspace @buildwithsygma/react-widget-app build",
+    "lint:widget": "yarn workspace commune-widget-core lint",
+    "lint:react-widget": "yarn workspace commune-widget-provider lint"
   },
   "repository": {
     "type": "git",
@@ -38,18 +47,6 @@
     "typescript": "^5.2.2"
   },
   "packageManager": "yarn@4.0.1",
-  "scripts": {
-    "demo": "yarn workspace @buildwithsygma/sygmaprotocol-widget run dev",
-    "clean": "yarn workspaces foreach --all -pt run clean",
-    "build": "yarn workspaces foreach --all -pt run build",
-    "lint": "yarn workspaces foreach --all -pt run lint",
-    "test:unit": "yarn workspaces foreach --all -pt run test:unit",
-    "build:widget": "yarn workspace @buildwithsygma/sygmaprotocol-widget build:preview",
-    "build:react-widget": "yarn workspace @buildwithsygma/sygmaprotocol-react-widget build",
-    "build:react-widget-app": "yarn workspace @buildwithsygma/react-widget-app build",
-    "lint:widget": "yarn workspace @buildwithsygma/sygmaprotocol-widget lint",
-    "lint:react-widget": "yarn workspace @buildwithsygma/sygmaprotocol-react-widget lint"
-  },
   "resolutions": {
     "@polkadot/api": "10.7.2",
     "@polkadot/util": "12.5.1",
