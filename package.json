@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Commune UI Monorepo",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "demo": "yarn workspace commune-widget-core run dev",
     "clean": "yarn workspaces foreach --all -pt run clean",
