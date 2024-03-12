@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "yarn run dev",
+    "start": "yarn run dev --host",
     "dev": "VITE_BRIDGE_ENV=testnet vite",
     "build": "yarn run lint:types && yarn run clean && vite build --mode development",
     "build:production": "yarn run lint:types && yarn run clean && vite build",
