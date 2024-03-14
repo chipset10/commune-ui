@@ -1,14 +1,14 @@
 {
     "plugins": ["node-workspace"],
     "packages": {
-      "packages/react": {
+      "packages/commune-widget-core": {
         "releaseType": "node",
         "draft": false,
         "prerelease": false,
         "changelogPath": "CHANGELOG.md",
         "versioning": "default"
       },
-      "packages/widget": {
+      "packages/commune-widget-wrapper": {
         "releaseType": "node",
         "draft": false,
         "prerelease": false,

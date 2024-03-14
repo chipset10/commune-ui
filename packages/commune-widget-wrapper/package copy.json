@@ -1,14 +1,14 @@
 {
   "name": "commune-widget-wrapper",
   "description": "Commune Widget React Wrapper",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "build/index.js",
   "module": "build/index.js",
   "license": "LGPL-3.0-or-later",
   "type": "module",
   "dependencies": {
     "@lit/react": "1.0.3",
-    "commune-widget-core": "0.0.1"
+    "commune-widget-core": "workspace:^"
   },
   "peerDependencies": {
     "react": ">=17",

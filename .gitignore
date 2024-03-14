@@ -48,3 +48,4 @@ public/commune-runtime-config*
 .vscode
 
 /dist
+.vercel

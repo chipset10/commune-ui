@@ -55,5 +55,8 @@
     "@polkadot/wasm-bridge": "7.2.2",
     "@polkadot/keyring": "12.5.1",
     "@polkadot/wasm-crypto": "7.2.2"
+  },
+  "dependencies": {
+    "vercel": "^33.5.5"
   }
 }

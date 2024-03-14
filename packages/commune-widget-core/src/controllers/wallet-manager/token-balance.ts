@@ -50,7 +50,7 @@ export class TokenBalanceController implements ReactiveController {
         //trigger so we don't wait BALANCE_REFRESH_MS before displaying balance
         void this.subscribeERC20BalanceUpdate(resource);
         this.timeout = setInterval(
-          this.subscribeERC20BalanceUpdate,
+          this.subscribeERC20BalanceUpdate.bind,
           BALANCE_REFRESH_MS,
           resource
         );

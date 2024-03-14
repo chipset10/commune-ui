@@ -13,7 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "commune-widget-wrapper": "workspace:^",
+    "commune-widget-wrapper": "0.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
