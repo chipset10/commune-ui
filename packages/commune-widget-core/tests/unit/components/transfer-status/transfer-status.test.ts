@@ -20,7 +20,7 @@ describe('transfer-status-component', function () {
         .destinationNetworkName=${'cronos'}
         .amount=${1234099943}
         .tokenDecimals=${6}
-        .resourceSymbol=${'sygUSDC'}
+        .resourceSymbol=${'wCOMAI'}
         .explorerLinkTo=${'some-url'}
       ></commune-transfer-status>
     `);

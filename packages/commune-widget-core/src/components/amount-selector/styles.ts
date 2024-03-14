@@ -20,7 +20,7 @@ export const styles = css`
     display: flex;
     width: 100%;
     justify-content: flex-start;
-    color: var(--neutral-600);
+    color: var(--zinc-400);
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.25em;
@@ -52,6 +52,7 @@ export const styles = css`
 
   .amountSelectorInput {
     border: none;
+    border-radius: 0.75rem;
     outline: none;
     color: var(--neutral-600);
     font-size: 2rem;

@@ -77,6 +77,7 @@ export const styles = css`
   .selectedOption {
     display: flex;
     align-items: center;
+    color: var(--zinc-100);
   }
 
   .networkIcon {

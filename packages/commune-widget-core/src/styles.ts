@@ -31,13 +31,13 @@ export const styles = css`
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 1.5rem;
+    padding: 1rem;
     max-width: 22.9375rem;
     min-height: 29.75rem;
     box-sizing: border-box;
     border-radius: 0.75rem;
-    border: 0.0625rem solid var(--gray-100);
-    background-color: var(--white);
+    border: 0.0625rem solid var(--orange-600);
+    background-color: #0a0a0a;
     box-shadow:
       0 0.25rem 0.375rem -0.0625rem rgba(0, 0, 0, 0.1),
       0 0.125rem 0.25rem -0.0625rem rgba(0, 0, 0, 0.06);
@@ -66,7 +66,7 @@ export const styles = css`
   }
 
   .widgetHeader .title {
-    color: var(--zinc-400);
+    color: var(--orange-600);
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -86,7 +86,7 @@ export const styles = css`
     align-items: center;
     gap: 0.375rem;
     align-self: flex-start;
-    color: var(--neutral-600);
+    color: var(--orange-600);
     font-size: 0.75rem;
     line-height: 150%;
   }

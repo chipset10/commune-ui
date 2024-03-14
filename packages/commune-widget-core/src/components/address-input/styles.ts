@@ -4,28 +4,28 @@ export const styles = css`
   .inputAddressSection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     gap: 0.5rem;
-    min-height: 7.75rem; // TOO: remove this hardcoded value
   }
 
   .inputAddressContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 7.75rem; // TOO: remove this hardcoded value
     gap: 0.5rem;
   }
 
   .inputAddress {
-    border-radius: 1.5rem;
+    border-radius: 0.75rem;
     border: 0.063rem solid var(--zinc-200);
     font-size: 0.875rem;
     text-align: left;
     resize: none;
     box-sizing: border-box;
     overflow: hidden;
-    padding: 1rem;
+    line-height: 1.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
   }
 
   .inputAddress:focus {
@@ -47,5 +47,7 @@ export const styles = css`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: var(--zinc-400);
+    margin-bottom: 0.1rem;
   }
 `;
