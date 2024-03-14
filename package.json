@@ -11,10 +11,10 @@
     "lint": "yarn workspaces foreach --all -pt run lint",
     "test:unit": "yarn workspaces foreach --all -pt run test:unit",
     "build:widget-core": "yarn workspace commune-widget-core build:preview",
-    "build:widget-provider": "yarn workspace commune-widget-provider build",
-    "build:widget-react-sample": "yarn workspace commune-widget-react-sample build",
+    "build:widget-wrapper": "yarn workspace commune-widget-wrapper build",
+    "build:widget-react-app": "yarn workspace commune-widget-react-app build",
     "lint:widget": "yarn workspace commune-widget-core lint",
-    "lint:react-widget": "yarn workspace commune-widget-provider lint"
+    "lint:react-widget": "yarn workspace commune-widget-wrapper lint"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,1 @@
+export { CommuneWidgetWrapper } from './WidgetReact';

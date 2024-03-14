@@ -1,0 +1,33 @@
+{
+  "name": "commune-widget-wrapper",
+  "description": "Commune Widget React Wrapper",
+  "version": "0.1.0",
+  "main": "build/index.js",
+  "module": "build/index.js",
+  "license": "LGPL-3.0-or-later",
+  "type": "module",
+  "dependencies": {
+    "@lit/react": "1.0.3",
+    "commune-widget-core": "workspace:^"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "@types/react": ">=17",
+    "eslint": "^8.48.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.2.2"
+  },
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build ./tsconfig.json",
+    "dev": "tsc --build --clean && tsc --build ./tsconfig.json --watch",
+    "clean": "rm -rf ./build",
+    "lint": "yarn run lint:types && yarn run lint:code",
+    "lint:types": "tsc -p ./tsconfig.json --noEmit",
+    "lint:code": "eslint '{src,tests}/**/*.ts'"
+  },
+  "author": "chipset10"
+}

@@ -10,7 +10,7 @@ export default defineConfig({
     sourcemap: true,
     outDir: 'build',
     lib: {
-      entry: 'src/index.ts',
+      entry: 'src/main.ts',
       formats: ['es']
     }
   },

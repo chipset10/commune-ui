@@ -8,7 +8,7 @@ export default defineConfig({
   build:  {
     outDir: 'dist',
     lib: {
-      entry: 'src/index.ts',
+      entry: 'src/main.ts',
       formats: ['es']
     },
     manifest: true,

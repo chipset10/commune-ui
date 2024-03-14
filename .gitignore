@@ -16,9 +16,9 @@
 
 # production
 /build
-packages/wallet-manager/build
-packages/sdk-manager/build
-
+# packages/wallet-manager/build
+# packages/sdk-manager/build
+packages/**/build
 # misc
 .DS_Store
 .env.local
